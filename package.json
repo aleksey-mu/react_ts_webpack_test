@@ -1,0 +1,70 @@
+{
+	"name": "react-test",
+	"version": "1.0.0",
+	"description": "React test",
+	"private": true,
+	"browserslist": [
+		"> 0.25%, not dead"
+	],
+	"scripts": {
+		"dev": "webpack-dev-server --history-api-fallback --inline --open",
+		"build": "npm run clear -s && webpack --progress",
+		"lint": "eslint ./**/*.js",
+		"clear": "del-cli dist",
+		"test": "jest"
+	},
+	"author": "aleksey-mu",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aleksey-mu/react_ts_webpack_test.git"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.11.0",
+		"@babel/preset-env": "^7.11.0",
+		"@babel/preset-react": "^7.10.4",
+		"@types/core-js": "^2.5.3",
+		"autoprefixer": "^9.8.6",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "^8.1.0",
+		"clean-webpack-plugin": "^3.0.0",
+		"copy-webpack-plugin": "^5.1.1",
+		"css-loader": "^3.6.0",
+		"css-mqpacker": "^7.0.0",
+		"cssnano": "^4.1.10",
+		"del-cli": "^3.0.1",
+		"es6-promise": "^4.2.8",
+		"eslint": "^6.8.0",
+		"eslint-config-airbnb": "^18.2.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-loader": "^3.0.4",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-jsx-a11y": "^6.3.1",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "^7.20.5",
+		"eslint-plugin-react-hooks": "^4.0.8",
+		"file-loader": "^4.3.0",
+		"html-loader": "^0.5.5",
+		"html-webpack-plugin": "^3.2.0",
+		"image-webpack-loader": "^6.0.0",
+		"isomorphic-fetch": "^2.2.1",
+		"jest": "^26.2.2",
+		"mini-css-extract-plugin": "^0.8.2",
+		"node-sass": "^4.14.1",
+		"postcss-loader": "^3.0.0",
+		"sass-loader": "^8.0.2",
+		"style-loader": "^1.2.1",
+		"uglifyjs-webpack-plugin": "^2.2.0",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"dependencies": {
+		"core-js": "^3.6.5",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-hot-loader": "^4.12.21",
+		"regenerator-runtime": "^0.13.7"
+	}
+}
